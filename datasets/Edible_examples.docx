@@ -1,0 +1,123 @@
+Edible Examples
+1.	No Odor + Bruises + White Cap Color:
+o	Odor: "n" (None)
+o	Bruises: "t" (Yes)
+o	Gill Color: Any
+o	Cap Shape: Any
+o	Cap Surface: Any
+o	Cap Color: "w" (White)
+2.	No Odor + Buff Gill Color:
+o	Odor: "n" (None)
+o	Bruises: Any
+o	Gill Color: "b" (Buff)
+o	Cap Shape: Any
+o	Cap Surface: Any
+o	Cap Color: Any
+3.	Almond Odor + Pink Gill Color:
+o	Odor: "a" (Almond)
+o	Bruises: Any
+o	Gill Color: "p" (Pink)
+o	Cap Shape: Any
+o	Cap Surface: Any
+o	Cap Color: Any
+4.	No Odor + Smooth Cap Surface + Convex Cap Shape:
+o	Odor: "n" (None)
+o	Bruises: Any
+o	Gill Color: Any
+o	Cap Shape: "x" (Convex)
+o	Cap Surface: "s" (Smooth)
+o	Cap Color: Any
+5.	No Odor + Purple Gill Color:
+o	Odor: "n" (None)
+o	Bruises: Any
+o	Gill Color: "u" (Purple)
+o	Cap Shape: Any
+o	Cap Surface: Any
+o	Cap Color: Any
+
+Example Edible Combination
+•	Odor: Almond ("a")
+•	Bruises: Yes ("t")
+•	Gill Color: Pink ("p")
+•	Cap Shape: Convex ("x")
+•	Cap Surface: Smooth ("s")
+•	Cap Color: White ("w")
+Edible Combinations with Odor ≠ None
+1.	Almond Odor + Certain Gill Colors:
+o	Odor: "a" (Almond)
+o	Gill Color: "b" (Buff), "p" (Pink), or "u" (Purple)
+o	Example:
+	Odor: Almond
+	Bruises: Yes or No
+	Gill Color: Buff
+	Cap Shape: Any
+	Cap Surface: Any
+	Cap Color: Any
+
+________________________________________
+Poisonous Examples
+1.	Foul Odor (Regardless of Other Parameters):
+o	Odor: "f" (Foul)
+o	Bruises: Any
+o	Gill Color: Any
+o	Cap Shape: Any
+o	Cap Surface: Any
+o	Cap Color: Any
+2.	No Odor + No Bruises + Bell Cap Shape + Scaly Cap Surface:
+o	Odor: "n" (None)
+o	Bruises: "f" (No)
+o	Gill Color: Any
+o	Cap Shape: "b" (Bell)
+o	Cap Surface: "y" (Scaly)
+o	Cap Color: Any
+3.	No Odor + No Bruises + Conical Cap Shape + Fibrous Cap Surface:
+o	Odor: "n" (None)
+o	Bruises: "f" (No)
+o	Gill Color: Any
+o	Cap Shape: "c" (Conical)
+o	Cap Surface: "f" (Fibrous)
+o	Cap Color: Any
+4.	No Odor + Green Gill Color:
+o	Odor: "n" (None)
+o	Bruises: Any
+o	Gill Color: "r" (Green)
+o	Cap Shape: Any
+o	Cap Surface: Any
+o	Cap Color: Any
+5.	No Odor + Brown Cap Color:
+o	Odor: "n" (None)
+o	Bruises: Any
+o	Gill Color: Any
+o	Cap Shape: Any
+o	Cap Surface: Any
+o	Cap Color: "n" (Brown)
+Example Poisonous Combination
+•	Odor: None ("n")
+•	Bruises: No ("f")
+•	Gill Color: Green ("r")
+•	Cap Shape: Conical ("c")
+•	Cap Surface: Fibrous ("f")
+•	Cap Color: Brown ("n")
+Poisonous Combinations with Odor = None
+1.	No Odor + No Bruises + Specific Cap Shape + Specific Cap Surface:
+o	Odor: "n" (None)
+o	Bruises: "f" (No)
+o	Cap Shape: "b" (Bell) or "c" (Conical)
+o	Cap Surface: "y" (Scaly) or "f" (Fibrous)
+o	Example:
+	Odor: None
+	Bruises: No
+	Gill Color: Any
+	Cap Shape: Bell
+	Cap Surface: Scaly
+	Cap Color: Any
+2.	No Odor + Other Unfavorable Combinations:
+o	If the mushroom does not meet any of the edible conditions (e.g., no bruises, wrong gill color, wrong cap shape, or wrong cap surface), it should default to poisonous.
+o	Example:
+	Odor: None
+	Bruises: No
+	Gill Color: Green ("r")
+	Cap Shape: Conical ("c")
+	Cap Surface: Fibrous ("f")
+	Cap Color: Brown ("n")
+
