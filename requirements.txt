@@ -1,3 +1,6 @@
+streamlit
+werkzeug
+streamlit-option-menu
 flask
 scikit-learn
 pandas

@@ -10,7 +10,6 @@ This project aims to classify mushrooms as edible or poisonous using machine lea
 
 - [Demo](#-demo)
 - [Project Structure](#-project-structure)
-- [Screenshots](#-screenshots)
 - [Technologies Used](#-technologies-used)
 - [Installation Guide](#-installation-guide)
 - [Authentication System](#-authentication-system)
@@ -51,11 +50,18 @@ This project aims to classify mushrooms as edible or poisonous using machine lea
 Mushroom-Project/
 ├── datasets/
 ├── models/
-├── views/
-├── Main.py
-├── requirements.txt
-├── users.db
-└── README.md
+├── Images/
+├── Dockerfile         # Containerization
+├── Main.py            # Main Streamlit app (authentication + navigation)
+├── requirements.txt   # Python dependencies
+├── users.db           # SQLite database (auto-created)
+├── README.md
+└── views/             # Streamlit page modules
+     ├── Home.py
+     ├── EdibilityChecker.py
+     ├── MushroomMlLab.py
+     ├── MushroomWisdom.py
+     └── Gallery.py
 ```
 
 ## ⚙️ Technologies Used
@@ -66,6 +72,7 @@ Mushroom-Project/
 - **Pandas & NumPy** – data handling
 - **Scikit-learn** – ML model training
 - **Matplotlib & Seaborn** – data visualization
+- **Docker** - Deployment
 
 ---
 
@@ -248,6 +255,20 @@ Planned future feature: REST API to classify mushrooms via JSON input
 - [UCI Mushroom Dataset](https://archive.ics.uci.edu/ml/datasets/Mushroom)
 - [Streamlit Docs](https://docs.streamlit.io/)
 - [Scikit-learn Docs](https://scikit-learn.org/stable/user_guide.html)
+
+---
+
+## 🐳 Run with Docker
+
+- Build the image
+```
+docker build -t mushroom-app .
+```
+- Run the container
+```
+docker run -d -p 8501:8501 --name mushroom-container mushroom-app
+```
+- Open in browser 👉 http://localhost:8501
 
 ---
 
